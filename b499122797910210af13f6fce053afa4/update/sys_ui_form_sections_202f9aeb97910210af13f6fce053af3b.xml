@@ -28,6 +28,34 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-07 16:20:11</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-07 16:58:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5ce7aa6797d10210af13f6fce053af18</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1108343_hr_human_resource" name="x_1108343_hr_human_resource" sys_domain="global" view="Default view">202f9aeb97910210af13f6fce053af3b</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_1108343_hr_human_resource" sys_domain="global" view="Default view">cce76a6797d10210af13f6fce053afa4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-07 16:58:23</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-07 16:58:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5ce7aa6797d10210af13f6fce053af1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1108343_hr_human_resource" name="x_1108343_hr_human_resource" sys_domain="global" view="Default view">202f9aeb97910210af13f6fce053af3b</sys_ui_form>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_1108343_hr_human_resource" sys_domain="global" view="Default view">8ce76a6797d10210af13f6fce053afa5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-07 16:58:23</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1108343_hr_human_resource</name>
             <roles/>
