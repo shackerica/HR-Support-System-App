@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">109b8828d9313110cedf7dffddb48f0b</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 16:00:10</sys_created_on>
+        <sys_id>638a1aa797910210af13f6fce053af96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 16:00:10</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>
