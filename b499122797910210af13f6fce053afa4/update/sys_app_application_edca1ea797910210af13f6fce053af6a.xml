@@ -7,14 +7,14 @@
         <hint>The HR app will centralize requests, enhance communication, ensure security, provide a user-friendly interface, and offer insightful reporting. </hint>
         <name/>
         <order/>
-        <roles>x_1108343_hr.hr_admin</roles>
+        <roles>x_1108343_hr.hr_admin,x_1108343_hr.hr_task_user</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 16:01:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>edca1ea797910210af13f6fce053af6a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Human Resource</sys_name>
         <sys_overrides/>
         <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
         <sys_update_name>sys_app_application_edca1ea797910210af13f6fce053af6a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 16:01:07</sys_updated_on>
+        <sys_updated_on>2024-04-08 19:04:15</sys_updated_on>
         <title>Human Resource</title>
         <view_name/>
     </sys_app_application>

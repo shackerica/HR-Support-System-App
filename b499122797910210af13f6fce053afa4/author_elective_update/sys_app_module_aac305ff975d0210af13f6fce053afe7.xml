@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Human Resource">edca1ea797910210af13f6fce053af6a</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>HR Tasks</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1108343_hr_hr_task</name>
+        <order>9</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 04:19:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aac305ff975d0210af13f6fce053afe7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>HR Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_update_name>sys_app_module_aac305ff975d0210af13f6fce053afe7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 18:14:30</sys_updated_on>
+        <timeline_page/>
+        <title>HR Task</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Human Resource">b499122797910210af13f6fce053afa4</application>
+        <file_path/>
+        <instance_id>8271516b1b6a7d54699443f4bd4bcbcc</instance_id>
+        <instance_name>dev221275</instance_name>
+        <name>sys_app_module_aac305ff975d0210af13f6fce053afe7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Human Resource">edca1ea797910210af13f6fce053af6a</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>HR Tasks</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1108343_hr_hr_task</name><order>9</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-04-08 04:19:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aac305ff975d0210af13f6fce053afe7</sys_id><sys_mod_count>6</sys_mod_count><sys_name>HR Task</sys_name><sys_overrides/><sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package><sys_policy/><sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope><sys_update_name>sys_app_module_aac305ff975d0210af13f6fce053afe7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-04-08 18:14:30</sys_updated_on><timeline_page/><title>HR Task</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>902187845</payload_hash>
+        <record_name>HR Task</record_name>
+        <reverted_from/>
+        <source>01f91e6797910210af13f6fce053afae</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 18:14:30</sys_created_on>
+        <sys_id>89e24c4097e94210af13f6fce053af83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ebeeb38760000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 18:14:30</sys_updated_on>
+        <type>Module</type>
+        <update_guid>01e24c4085e9421005f5f5a00c183883</update_guid>
+        <update_guid_history>01e24c4085e9421005f5f5a00c183883:902187845,7dee7f7f6a9942100f6b2d89e5814ba5:1034642212,805dc9bbd69d021005839904451af3a6:472983846,f9bc01bb499d02108d19cf1ce8234907:535351854,d98cc17be89d0210350d42c0adf95a21:-1156424267,c0784d37cd9d021020093dd909fb87f8:1946900584,66c305ff8b5d0210070473957ef71fe9:1795913937,66c305ff8b5d0210070473957ef71fe9:1795913937</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="HR Task">f77788c497e94210af13f6fce053afe9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 18:34:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>667ee7ed8ef449358ffe7f6311ce3ff1</sys_id>
+        <sys_metadata>aac305ff975d0210af13f6fce053afe7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HR Task</sys_name>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_scope_delete display_value="">0aa6c19a408e47189edfe74280efff04</sys_scope_delete>
+        <sys_update_name>sys_app_module_aac305ff975d0210af13f6fce053afe7</sys_update_name>
+        <sys_update_version display_value="sys_app_module_aac305ff975d0210af13f6fce053afe7">89e24c4097e94210af13f6fce053af83</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 18:34:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

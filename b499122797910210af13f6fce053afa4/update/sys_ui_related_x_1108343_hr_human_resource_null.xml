@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_1108343_hr_human_resource" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Human Resource - Default view" name="x_1108343_hr_human_resource" related_list="NULL" sys_domain="global" view="Default view">c8cda80497ad4210af13f6fce053af7e</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_1108343_hr_hr_task.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-08 21:21:45</sys_created_on>
+            <sys_id>48cda80497ad4210af13f6fce053af7f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-08 21:21:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Human Resource - Default view" name="x_1108343_hr_human_resource" related_list="NULL" sys_domain="global" view="Default view">c8cda80497ad4210af13f6fce053af7e</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>task_sla.task</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-08 21:21:45</sys_created_on>
+            <sys_id>4ccda80497ad4210af13f6fce053af7f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-08 21:21:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Human Resource - Default view</calculated_name>
+            <filter/>
+            <name>x_1108343_hr_human_resource</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-08 21:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c8cda80497ad4210af13f6fce053af7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Human Resource - Default view</sys_name>
+            <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+            <sys_update_name>sys_ui_related_x_1108343_hr_human_resource_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-08 21:21:45</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>
