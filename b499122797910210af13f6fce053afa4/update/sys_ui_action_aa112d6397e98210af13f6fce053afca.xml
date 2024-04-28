@@ -2,7 +2,7 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name/>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
@@ -28,10 +28,21 @@
         <list_style/>
         <messages/>
         <name>Close</name>
-        <onclick/>
+        <onclick>closeRecord()</onclick>
         <order>130</order>
-        <script><![CDATA[action.setRedirectURL(current);
-]]></script>
+        <script><![CDATA[function closeRecord(){
+	g_form.setValue("state",3);
+	g_form.setMandatory("comments", true);
+	g_form.save();
+	
+	// call a server-side script using GlideAjax
+	var ga = new GlideAjax("CloseRecord");
+	ga.addParam("sys_id", g_form.getUniqueValue());
+	ga.addParam("method_name", "close");
+	
+	// execute the GlideAjax call triggering the server-side script
+	ga.getXMLAnswer();
+}]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -42,7 +53,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>aa112d6397e98210af13f6fce053afca</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Close</sys_name>
         <sys_overrides/>
         <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
@@ -50,7 +61,7 @@
         <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
         <sys_update_name>sys_ui_action_aa112d6397e98210af13f6fce053afca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-19 22:14:47</sys_updated_on>
+        <sys_updated_on>2024-04-28 02:18:28</sys_updated_on>
         <table>x_1108343_hr_human_resource</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1108343_hr.CloseRecord</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>The code defines a CloseRecord class with a close(recordID) method. This method retrieves a record from the 'x_110843_hr_human_resource' table by recordID. If found, it sets the 'state' field to 3 and updates the record.</description>
+        <name>CloseRecord</name>
+        <script><![CDATA[var CloseRecord = Class.create();
+CloseRecord.prototype = {
+    initialize: function() {},
+    close: function(recordID) {
+        var record = new GlideRecord('x_110843_hr_human_resource');
+        if (record.get(recordID)) {
+            record.setValue('state', 3);
+            record.update();
+        }
+    },
+    type: 'CloseRecord'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-28 02:13:31</sys_created_on>
+        <sys_id>5b656fca97790210af13f6fce053af02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CloseRecord</sys_name>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_update_name>sys_script_include_5b656fca97790210af13f6fce053af02</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-28 02:13:31</sys_updated_on>
+    </sys_script_include>
+</record_update>

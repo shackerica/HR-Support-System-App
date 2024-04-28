@@ -9,7 +9,7 @@
                 <element inactive_on_update="false" label="Training" sequence="4" value="training"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Close Code" mandatory="true" max_length="40" name="u_close_code" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Close Code" max_length="40" name="u_close_code" type="string">
             <choice>
                 <element inactive_on_update="false" label="Duplicate Ticket" sequence="0" value="duplicate ticket"/>
                 <element inactive_on_update="false" label="Information Not Available" sequence="1" value="information not available"/>
