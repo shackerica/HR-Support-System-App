@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1108343_hr.ResolveRecord</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>The ResolveRecord script include defines a class to resolve records in the 'x_1108343_hr_human_resource' table. It contains a resolve function that checks if a record exists, sets its state to "Resolved", and updates the record to save the change.</description>
+        <name>ResolveRecord</name>
+        <script><![CDATA[// Create a new class called ResolveRecord
+var ResolveRecord = Class.create();
+
+// Define the prototype for the class
+ResolveRecord.prototype = {
+
+    // Define the initialization function
+    initialize: function() {
+        // No specific initialization logic, empty function
+    },
+
+    // Define the function to resolve a record by its ID
+    resolve: function(recordId) {
+        // Create a GlideRecord for the specified table
+        var record = new GlideRecord('x_1108343_hr_human_resource');
+
+        // Check if the record with the given ID exists
+        if (record.get(recordId)) {
+            // If it exists, set the 'state' field to Resolved = 6
+            record.setValue('state', 6);
+
+            // Perform additional logic if needed (custom operations)
+            // Example: record.setValue('another_field', 'value');
+
+            // Update the record in the database
+            record.update(); // Save changes to the record
+        }
+    },
+
+    // Specify the class type (useful for identification and debugging)
+    type: 'ResolveRecord'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-27 21:37:21</sys_created_on>
+        <sys_id>7ac6aa4697750210af13f6fce053afd9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ResolveRecord</sys_name>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_update_name>sys_script_include_7ac6aa4697750210af13f6fce053afd9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-28 01:40:17</sys_updated_on>
+    </sys_script_include>
+</record_update>

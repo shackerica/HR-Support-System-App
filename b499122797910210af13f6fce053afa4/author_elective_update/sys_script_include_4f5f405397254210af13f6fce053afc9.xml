@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1108343_hr.RecordResolver</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>RecordResolver</name>
+        <script><![CDATA[var RecordResolver = Class.create();
+RecordResolver.prototype = {
+    resolveRecord: function() {
+        var gr = new GlideRecord(current.table);
+        if (gr.get(current.sys_id)) {
+            gr.state = 'Resolved';
+            gr.update();
+        }
+    }
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-18 21:39:24</sys_created_on>
+        <sys_id>4f5f405397254210af13f6fce053afc9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>RecordResolver</sys_name>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_update_name>sys_script_include_4f5f405397254210af13f6fce053afc9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 18:36:24</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Human Resource">b499122797910210af13f6fce053afa4</application>
+        <file_path/>
+        <instance_id>8271516b1b6a7d54699443f4bd4bcbcc</instance_id>
+        <instance_name>dev221275</instance_name>
+        <name>sys_script_include_4f5f405397254210af13f6fce053afc9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1108343_hr.RecordResolver&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;RecordResolver&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var RecordResolver = Class.create();
+RecordResolver.prototype = {
+    resolveRecord: function() {
+        var gr = new GlideRecord(current.table);
+        if (gr.get(current.sys_id)) {
+            gr.state = 'Resolved';
+            gr.update();
+        }
+    }
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-04-18 21:39:24&lt;/sys_created_on&gt;&lt;sys_id&gt;4f5f405397254210af13f6fce053afc9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;RecordResolver&lt;/sys_name&gt;&lt;sys_package display_value="Human Resource" source="x_1108343_hr"&gt;b499122797910210af13f6fce053afa4&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Human Resource"&gt;b499122797910210af13f6fce053afa4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_4f5f405397254210af13f6fce053afc9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-19 18:36:24&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>28990138</payload_hash>
+        <record_name>RecordResolver</record_name>
+        <reverted_from/>
+        <source>01f91e6797910210af13f6fce053afae</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-19 18:36:24</sys_created_on>
+        <sys_id>9d61f86f97e58210af13f6fce053af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ef7a53add0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 18:36:24</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>1561f86f66e58210da4617d9322da59f</update_guid>
+        <update_guid_history>1561f86f66e58210da4617d9322da59f:28990138,58b15c931d254210ca83d3fe845ac744:2063069973</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-19 18:58:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>8ee6d9f0bc5e4d358d72beaa1b4c0f99</sys_id>
+        <sys_metadata>4f5f405397254210af13f6fce053afc9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RecordResolver</sys_name>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_scope_delete display_value="">0aa6c19a408e47189edfe74280efff04</sys_scope_delete>
+        <sys_update_name>sys_script_include_4f5f405397254210af13f6fce053afc9</sys_update_name>
+        <sys_update_version display_value="sys_script_include_4f5f405397254210af13f6fce053afc9">9d61f86f97e58210af13f6fce053af9f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 18:58:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
