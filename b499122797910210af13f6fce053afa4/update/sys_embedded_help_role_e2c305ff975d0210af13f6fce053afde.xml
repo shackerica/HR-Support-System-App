@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1108343_hr.hr_task_user" name="x_1108343_hr.hr_task_user">a2c385bf975d0210af13f6fce053af87</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 04:19:33</sys_created_on>
+        <sys_id>e2c305ff975d0210af13f6fce053afde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a2c385bf975d0210af13f6fce053af87</sys_name>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_update_name>sys_embedded_help_role_e2c305ff975d0210af13f6fce053afde</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 04:19:33</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
