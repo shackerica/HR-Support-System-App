@@ -2,7 +2,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="u_source" table="x_1108343_hr_human_resource">
         <active>true</active>
         <array>false</array>
-        <attributes>encode_utf8=false</attributes>
+        <attributes>edge_encryption_enabled=true,encode_utf8=false</attributes>
         <audit>false</audit>
         <calculation/>
         <choice>0</choice>
@@ -33,7 +33,7 @@
         <name>x_1108343_hr_human_resource</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference display_value="" name="sc_cat_item">sc_cat_item</reference>
         <reference_cascade_rule/>
@@ -53,7 +53,7 @@
         <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
         <sys_update_name>sys_dictionary_x_1108343_hr_human_resource_u_source</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 16:20:11</sys_updated_on>
+        <sys_updated_on>2024-06-11 21:34:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

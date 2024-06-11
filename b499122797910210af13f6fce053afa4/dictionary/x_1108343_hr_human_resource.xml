@@ -23,6 +23,6 @@
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="Resolved by" max_length="32" name="u_resolved_by" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Resolved" max_length="40" name="u_resolved_date_time" type="glide_date_time"/>
-        <element attributes="encode_utf8=false" label="Source" max_length="32" name="u_source" reference="sc_cat_item" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Source" max_length="32" name="u_source" read_only="true" reference="sc_cat_item" type="reference"/>
     </element>
 </database>
