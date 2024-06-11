@@ -101,7 +101,7 @@ SLAs definitions for the following will be created to keep track of HR support p
 
 
 - **Relationships:**
-  - Extends to the Task Table.
+  - Extends the Task Table.
 
 - **Prefix:** HR
 - **Auto-numbering:** Enabled
@@ -117,7 +117,7 @@ SLAs definitions for the following will be created to keep track of HR support p
 
 
 - **Relationships:**
-  - Extends to the Task Table.
+  - Extends the Task Table.
 
 - **Prefix:** HRT
 - **Auto-numbering:** Enabled
