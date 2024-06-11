@@ -92,6 +92,38 @@ SLAs definitions for the following will be created to keep track of HR support p
 ## Design Aspects
 ### Tables
 
+#### Human Resource Table
+
+- **Description:** This table stores information about human resources.
+- **Structure:**
+
+  ![Human Resource Table Structure](https://github.com/shackerica/HR-Support-System-App/assets/19885127/2f83bc8a-9dba-46e2-adb9-5e7dad42aaec)
+
+
+- **Relationships:**
+  - Extends to the Task Table.
+
+- **Prefix:** HR
+- **Auto-numbering:** Enabled
+- **Role Permissions:**
+  - `x_419821_hr.hr_admin`: Assigned to the User role field.
+
+#### HR Task Table
+
+- **Description:** This table manages tasks related to human resources.
+- **Structure:**
+
+  ![HR Task Table Structure](https://github.com/shackerica/HR-Support-System-App/assets/19885127/5c39cf47-2c06-479c-8140-b26b05086752)
+
+
+- **Relationships:**
+  - Extends to the Task Table.
+
+- **Prefix:** HRT
+- **Auto-numbering:** Enabled
+- **Role Permissions:**
+  - `x_419821_hr.hr_task_user`: Assigned to the User role field.
+
 
 ### UI Pages
 
