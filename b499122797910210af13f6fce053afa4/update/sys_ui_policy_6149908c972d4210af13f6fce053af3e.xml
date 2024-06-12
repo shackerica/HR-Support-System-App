@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <conditions table="x_1108343_hr_human_resource">state=3^NQstate=6^EQ<item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
             <item display_value="Resolved" endquery="false" field="state" goto="false" newquery="true" operator="=" or="false" value="6"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
@@ -31,7 +31,7 @@ g_form.setSectionDisplay('closure_information', true);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6149908c972d4210af13f6fce053af3e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Display closure information section when state is resolved or closed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
@@ -39,7 +39,7 @@ g_form.setSectionDisplay('closure_information', true);
         <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
         <sys_update_name>sys_ui_policy_6149908c972d4210af13f6fce053af3e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-11 21:46:11</sys_updated_on>
+        <sys_updated_on>2024-06-12 14:19:22</sys_updated_on>
         <table>x_1108343_hr_human_resource</table>
         <ui_type>0</ui_type>
         <view/>

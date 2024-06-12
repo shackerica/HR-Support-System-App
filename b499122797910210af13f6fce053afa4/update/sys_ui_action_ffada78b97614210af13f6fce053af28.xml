@@ -30,9 +30,7 @@
         <name>Resolve</name>
         <onclick>resolveRecord()</onclick>
         <order>120</order>
-        <script><![CDATA[action.setRedirectURL(current);
-
-// Define a function that resolves the record
+        <script><![CDATA[// Define a function to set the State field to 'Resolved' and make Comments field mandatory
 function resolveRecord() {
     // Set the 'State' field to 'Resolved' by assigning an integer value
     g_form.setValue("state", 6); // 6 represents 'Resolved' state
@@ -41,19 +39,22 @@ function resolveRecord() {
     g_form.setMandatory("comments", true); // true sets the field to mandatory
 
     // Save the form to apply changes
-    g_form.save(); // This triggers the save operation on the form
+    g_form.save().then(function() {
+        // After saving, redirect back to the HR ticket form
+        action.setRedirectURL(current);
 
-    // Call a server-side script using GlideAjax to perform additional server-side operations
-    var ga = new GlideAjax("ResolveRecord"); // Create a new GlideAjax instance
+        // Call a server-side script using GlideAjax to perform additional server-side operations
+        var ga = new GlideAjax("ResolveRecord"); // Create a new GlideAjax instance
 
-    // Add a parameter with the unique ID of the current form (sys_id)
-    ga.addParam("sys_id", g_form.getUniqueValue()); // Pass the record's sys_id
+        // Add a parameter with the unique ID of the current form (sys_id)
+        ga.addParam("sys_id", g_form.getUniqueValue()); // Pass the record's sys_id
 
-    // Specify the method in the server-side script to call
-    ga.addParam("method_name", "resolve"); // This tells which method to call
+        // Specify the method in the server-side script to call
+        ga.addParam("sysparm_name", "resolve"); // This tells which method to call
 
-    // Execute the GlideAjax call, triggering the server-side script
-    ga.getXMLAnswer(); // This executes the call to the server-side script
+        // Execute the GlideAjax call, triggering the server-side script
+        ga.getXMLAnswer(); // This executes the call to the server-side script
+    });
 }]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -65,7 +66,7 @@ function resolveRecord() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ffada78b97614210af13f6fce053af28</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>Resolve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
@@ -73,7 +74,7 @@ function resolveRecord() {
         <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
         <sys_update_name>sys_ui_action_ffada78b97614210af13f6fce053af28</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-07 17:44:54</sys_updated_on>
+        <sys_updated_on>2024-06-12 14:31:25</sys_updated_on>
         <table>x_1108343_hr_human_resource</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

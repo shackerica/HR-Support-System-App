@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>state</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hide closure information section</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // Get the value of the state for closed state
+    var stateValue = g_form.getValue('state');
+
+    // Display or hide closure info based on state value
+    if (stateValue === '3') {
+        // Display closure info
+        g_form.setSectionDisplay('closure_information', true);
+    } else {
+        // Hide closure info
+        g_form.setSectionDisplay('closure_information', false);
+    }
+
+    // Type appropriate comment here, and begin script below
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 21:04:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>94296c8c976d4210af13f6fce053af01</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Hide closure information section</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_update_name>sys_script_client_94296c8c976d4210af13f6fce053af01</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-12 20:20:22</sys_updated_on>
+        <table>x_1108343_hr_hr_task</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Human Resource">b499122797910210af13f6fce053afa4</application>
+        <file_path/>
+        <instance_id>8271516b1b6a7d54699443f4bd4bcbcc</instance_id>
+        <instance_name>dev221275</instance_name>
+        <name>sys_script_client_94296c8c976d4210af13f6fce053af01</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;state&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Hide closure information section&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // Get the value of the state for closed state
+    var stateValue = g_form.getValue('state');
+
+    // Display or hide closure info based on state value
+    if (stateValue === '3') {
+        // Display closure info
+        g_form.setSectionDisplay('closure_information', true);
+    } else {
+        // Hide closure info
+        g_form.setSectionDisplay('closure_information', false);
+    }
+
+    // Type appropriate comment here, and begin script below
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-04-08 21:04:38&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;94296c8c976d4210af13f6fce053af01&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide closure information section&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Human Resource" source="x_1108343_hr"&gt;b499122797910210af13f6fce053afa4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Human Resource"&gt;b499122797910210af13f6fce053afa4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_94296c8c976d4210af13f6fce053af01&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-12 20:20:22&lt;/sys_updated_on&gt;&lt;table&gt;x_1108343_hr_hr_task&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1919801894</payload_hash>
+        <record_name>Hide closure information section</record_name>
+        <reverted_from/>
+        <source>01f91e6797910210af13f6fce053afae</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-12 20:20:22</sys_created_on>
+        <sys_id>660f073097720610af13f6fce053afa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1900e1bd23c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-12 20:20:22</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>2e0f07304e720610604e9c1fd55709a5</update_guid>
+        <update_guid_history>2e0f07304e720610604e9c1fd55709a5:1919801894,f3fec3309c720610f08daa2ef061f8dd:-431852077,62ce037c64320610474b22d065d51c7c:1919801894,ef7006786bfac2103be992d766d73cc9:-431852077,7c7cbd349ffac2108d4bfa2e9fa0776e:1919801894,f2fe67e4ca72c2101d72f2b964f2d61c:-431852077,4594faa4887e8210a5acc7ee39135118:1919801894,9eeb6c8c6c6d42106083e7e0f8b0f52d:-431852077,d5d9ec8c006d4210aa941493fa42b390:-1027550426</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-12 20:20:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>1af8fbf3bad6464b88a79b40cd19f331</sys_id>
+        <sys_metadata>94296c8c976d4210af13f6fce053af01</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide closure information section</sys_name>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_parent display_value="HR Task">dc9301ff975d0210af13f6fce053afab</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_scope_delete display_value="">0aa6c19a408e47189edfe74280efff04</sys_scope_delete>
+        <sys_update_name>sys_script_client_94296c8c976d4210af13f6fce053af01</sys_update_name>
+        <sys_update_version display_value="sys_script_client_94296c8c976d4210af13f6fce053af01">660f073097720610af13f6fce053afa6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-12 20:20:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
