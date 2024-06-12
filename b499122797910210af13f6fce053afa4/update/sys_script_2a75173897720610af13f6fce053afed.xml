@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1108343_hr_human_resource</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>State is Resolved</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Check if the state is changing to 'Resolved'
+    if (current.state.changesTo(6)) {
+        // Check if there are any active HR Tasks associated with the current HR ticket
+        var hrTaskGR = new GlideRecord('x_1108343_hr_hr_task');
+        hrTaskGR.addQuery('parent', current.sys_id);
+        hrTaskGR.addQuery('active', true);
+        hrTaskGR.query();
+
+        if (hrTaskGR.hasNext()) {
+            // If there are active tasks, abort the action and show an error message
+            gs.addErrorMessage('Please close all active tasks before Resolving this ticket');
+            current.setAbortAction(true);
+        } else {
+            // If there are no active tasks, set the Resolved by and Resolved fields
+            current.resolved_by = gs.getUserID(); // Set the Resolved by field to the current logged in user
+
+            var currentDateTime = new GlideDateTime();
+            current.resolved = currentDateTime; // Set the Resolved field to the current date/time
+        }
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-12 21:06:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2a75173897720610af13f6fce053afed</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>State is Resolved</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_update_name>sys_script_2a75173897720610af13f6fce053afed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-12 21:27:12</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2a75173897720610af13f6fce053afed"/>
+</record_update>
