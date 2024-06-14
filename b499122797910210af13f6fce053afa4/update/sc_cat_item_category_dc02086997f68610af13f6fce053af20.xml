@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Confidential Inquiry Record Producer">b0c1482d97368610af13f6fce053afe1</sc_cat_item>
+        <sc_category display_value="Human Resource">2018cbd597f28610af13f6fce053af9b</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-14 13:20:00</sys_created_on>
+        <sys_id>dc02086997f68610af13f6fce053af20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Human Resource.Confidential Inquiry Record Producer</sys_name>
+        <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
+        <sys_update_name>sc_cat_item_category_dc02086997f68610af13f6fce053af20</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-14 13:20:00</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>
