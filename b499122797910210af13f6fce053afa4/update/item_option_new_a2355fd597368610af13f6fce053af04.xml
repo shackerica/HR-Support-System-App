@@ -2,14 +2,14 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Confidential Inquiry Record Producer">b0c1482d97368610af13f6fce053afe1</cat_item>
+        <cat_item display_value="HR General Inquiry">36160b5597f28610af13f6fce053af02</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
         <choice_table/>
         <create_roles/>
         <default_html_value/>
-        <default_value>active=true</default_value>
+        <default_value/>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -21,7 +21,7 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>u_reference_1</field>
+        <field>description</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -40,14 +40,14 @@
         <mandatory>true</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
-        <mask_use_encryption>false</mask_use_encryption>
-        <name>u_reference_1</name>
-        <order>101</order>
+        <mask_use_encryption>true</mask_use_encryption>
+        <name>description</name>
+        <order>800</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Requested for</question_text>
+        <question_text>Description</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -55,7 +55,7 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table>x_1108343_hr_human_resource</record_producer_table>
-        <reference>sys_user</reference>
+        <reference/>
         <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
@@ -75,19 +75,19 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-06-14 13:23:24</sys_created_on>
-        <sys_id>407200a997f68610af13f6fce053af07</sys_id>
+        <sys_created_on>2024-06-14 10:04:45</sys_created_on>
+        <sys_id>a2355fd597368610af13f6fce053af04</sys_id>
         <sys_mod_count>3</sys_mod_count>
-        <sys_name>u_reference_1</sys_name>
+        <sys_name>Description</sys_name>
         <sys_package display_value="Human Resource" source="x_1108343_hr">b499122797910210af13f6fce053afa4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Human Resource">b499122797910210af13f6fce053afa4</sys_scope>
-        <sys_update_name>item_option_new_407200a997f68610af13f6fce053af07</sys_update_name>
+        <sys_update_name>item_option_new_a2355fd597368610af13f6fce053af04</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-14 13:50:32</sys_updated_on>
+        <sys_updated_on>2024-06-14 13:55:39</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>8</type>
+        <type>2</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -103,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=407200a997f68610af13f6fce053af07"/>
-    <fx_price action="delete_multiple" query="id=407200a997f68610af13f6fce053af07"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=a2355fd597368610af13f6fce053af04"/>
+    <fx_price action="delete_multiple" query="id=a2355fd597368610af13f6fce053af04"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>407200a997f68610af13f6fce053af07</id>
+        <id>a2355fd597368610af13f6fce053af04</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-06-14 13:23:25</sys_created_on>
-        <sys_id>dec2086997f68610af13f6fce053af3e</sys_id>
+        <sys_created_on>2024-06-14 10:04:46</sys_created_on>
+        <sys_id>2c555b1997368610af13f6fce053af76</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-14 13:23:25</sys_updated_on>
+        <sys_updated_on>2024-06-14 10:04:46</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -126,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>407200a997f68610af13f6fce053af07</id>
+        <id>a2355fd597368610af13f6fce053af04</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-06-14 13:23:25</sys_created_on>
-        <sys_id>96c2086997f68610af13f6fce053af3e</sys_id>
+        <sys_created_on>2024-06-14 10:04:46</sys_created_on>
+        <sys_id>ac55971997368610af13f6fce053affb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-14 13:23:25</sys_updated_on>
+        <sys_updated_on>2024-06-14 10:04:46</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
